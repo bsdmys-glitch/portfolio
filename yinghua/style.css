@@ -1,0 +1,17 @@
+.yinghua-page .hero-slide img {
+  object-position: center 54%;
+}
+
+.yinghua-page .scroller-item .image-frame {
+  min-height: 0;
+}
+
+.yinghua-page .scroller-item .image-frame img {
+  object-fit: contain;
+}
+
+@media (max-width: 780px) {
+  .yinghua-page .hero-slide img {
+    object-position: center center;
+  }
+}

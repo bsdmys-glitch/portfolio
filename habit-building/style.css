@@ -1,0 +1,106 @@
+.habit-page {
+  --habit-green: #285b38;
+  --habit-green-soft: #e8efe8;
+  --habit-orange: #c96b2c;
+  --habit-ink: #202d26;
+  --habit-paper: #fafaf5;
+  background: var(--habit-paper);
+  color: var(--habit-ink);
+}
+
+.habit-page .site-header,
+.habit-page .site-footer {
+  background: var(--habit-paper);
+}
+
+.habit-page .detail-kicker {
+  color: var(--habit-green);
+  letter-spacing: 0.08em;
+}
+
+.habit-page .detail-heading h1,
+.habit-page .detail-section-copy h2 {
+  color: var(--habit-ink);
+}
+
+.habit-page .detail-heading p,
+.habit-page .detail-section-copy p {
+  color: #4b5b50;
+}
+
+.habit-page .detail-facts {
+  border-color: rgba(40, 91, 56, 0.28);
+}
+
+.habit-page .detail-facts dt,
+.habit-page figcaption {
+  color: #68766c;
+}
+
+.habit-page .detail-facts dd,
+.habit-page figcaption strong {
+  color: var(--habit-ink);
+}
+
+.habit-page .habit-cover {
+  background: var(--habit-green-soft);
+}
+
+.habit-page .habit-cover img {
+  height: min(720px, 66vw);
+  min-height: 520px;
+  object-fit: contain;
+  background: #fff;
+}
+
+.habit-page .detail-section,
+.habit-page .detail-credits,
+.habit-page .detail-next {
+  border-color: rgba(40, 91, 56, 0.28);
+}
+
+.habit-page .detail-section-copy .detail-kicker {
+  color: var(--habit-orange);
+}
+
+.habit-page .habit-page-grid {
+  align-items: start;
+}
+
+.habit-page .habit-page-grid .detail-image {
+  background: #fff;
+}
+
+.habit-page .habit-page-grid .detail-image img {
+  height: clamp(520px, 48vw, 680px);
+  object-fit: contain;
+  background: #fff;
+}
+
+.habit-page .habit-page-grid figcaption {
+  padding: 12px 14px 14px;
+  background: #fff;
+}
+
+.habit-page .detail-next a:hover,
+.habit-page .site-footer a:hover {
+  color: var(--habit-green);
+}
+
+@media (min-width: 1600px) {
+  .habit-page .habit-page-grid .detail-image img {
+    height: 720px;
+  }
+}
+
+@media (max-width: 760px) {
+  .habit-page .habit-cover img {
+    height: auto;
+    min-height: 0;
+  }
+
+  .habit-page .habit-page-grid .detail-image img {
+    height: auto;
+    max-height: none;
+  }
+}

@@ -1,0 +1,56 @@
+.jiulong-page {
+  --sage: #e8eee9;
+  --sage-ink: #4d665c;
+  --warm: #b58662;
+}
+
+.jiulong-page .hero-slide.hero-map {
+  background: #edf1ed;
+}
+
+.jiulong-page .hero-slide.hero-map img {
+  object-fit: contain;
+  padding: 0 clamp(24px, 8vw, 140px);
+}
+
+.jiulong-page .hero-caption {
+  color: var(--ink);
+  background: linear-gradient(to top, rgba(237, 241, 237, 0.96), rgba(237, 241, 237, 0));
+}
+
+.jiulong-page .hero-map .hero-caption {
+  color: var(--ink);
+}
+
+.jiulong-page .project-title-row h1,
+.jiulong-page .record-thesis h2,
+.jiulong-page .split-chapter-copy h2,
+.jiulong-page .chapter-head h2,
+.jiulong-page .credits-grid h2,
+.jiulong-page .related-item strong {
+  letter-spacing: -0.01em;
+}
+
+.jiulong-page .research-card .image-frame,
+.jiulong-page .framework-card .image-frame,
+.jiulong-page .design-card .image-frame,
+.jiulong-page .guidelines-figure .image-frame {
+  background: #eef2ee;
+}
+
+.jiulong-page .research-card .image-frame img,
+.jiulong-page .framework-card .image-frame img,
+.jiulong-page .design-card .image-frame img,
+.jiulong-page .guidelines-figure .image-frame img {
+  object-fit: contain;
+}
+
+.jiulong-page .asset-placeholder {
+  background: linear-gradient(135deg, #f5f8f4, #eaf0eb);
+}
+
+@media (max-width: 780px) {
+  .jiulong-page .hero-slide.hero-map img {
+    padding: 0 8px;
+  }
+}

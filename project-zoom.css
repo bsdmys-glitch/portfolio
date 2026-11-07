@@ -1,0 +1,89 @@
+@view-transition {
+  navigation: auto;
+}
+
+.project-zoom-link {
+  position: absolute;
+  inset: 0;
+  display: block;
+  cursor: pointer;
+  -webkit-user-drag: none;
+}
+
+.project-zoom-link img {
+  -webkit-user-drag: none;
+}
+
+body.project-zoom-page .site-header {
+  padding-inline: max(clamp(20px, 5vw, 84px), calc((100vw - 1680px) / 2));
+}
+
+body.project-zoom-page .hero-slide {
+  height: min(68svh, 46vw);
+  min-height: 380px;
+  max-height: none;
+  aspect-ratio: auto;
+}
+
+body.project-zoom-page .hero-slide:first-child img {
+  transform: scale(1.1);
+  transform-origin: center;
+  object-position: center;
+  filter: none;
+}
+
+body.aiib-page.project-zoom-page .hero-slide:first-child img {
+  object-position: center 56%;
+}
+
+html[data-project-zoom="leaving"] [data-preview] {
+  pointer-events: none;
+}
+
+html[data-project-zoom="arriving"] .hero-slide:first-child .hero-caption,
+html[data-project-zoom="arriving"] .project-record {
+  opacity: 0;
+}
+
+html[data-project-zoom="ready"] .hero-slide:first-child .hero-caption,
+html[data-project-zoom="ready"] .project-record {
+  animation: project-zoom-reveal 420ms ease both;
+}
+
+html.zoom-native .site-header {
+  view-transition-name: project-navigation;
+}
+
+html.zoom-native .preview-stage,
+html.zoom-native .hero-track {
+  view-transition-name: project-cover;
+}
+
+html.zoom-native::view-transition-group(*) {
+  animation-duration: 240ms;
+  animation-timing-function: cubic-bezier(.32, 0, .2, 1);
+}
+
+html.zoom-native::view-transition-old(project-navigation),
+html.zoom-native::view-transition-new(project-navigation) {
+  animation: none;
+}
+
+@keyframes project-zoom-reveal {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 560px) {
+  body.project-zoom-page .hero-slide {
+    height: min(58svh, 480px);
+    min-height: 360px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-project-zoom="ready"] .hero-slide:first-child .hero-caption,
+  html[data-project-zoom="ready"] .project-record {
+    animation: none;
+  }
+}

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Planning operations from city edge to shipyard core</title>
+  <desc id="desc">A muted aerial base with an analytical overlay showing the city edge, public axis, retained industrial core, waterfront belt and public nodes.</desc>
+  <defs>
+    <filter id="muted-aerial" x="0" y="0" width="100%" height="100%">
+      <feColorMatrix type="saturate" values="0.28" />
+      <feComponentTransfer>
+        <feFuncR type="linear" slope="0.78" intercept="0.16" />
+        <feFuncG type="linear" slope="0.82" intercept="0.14" />
+        <feFuncB type="linear" slope="0.84" intercept="0.12" />
+      </feComponentTransfer>
+    </filter>
+    <marker id="axis-arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#a95e4f" />
+    </marker>
+  </defs>
+
+  <rect width="1800" height="1200" fill="#f5f6f3" opacity="0.2" />
+
+  <g font-family="Arial, Helvetica, sans-serif" fill="#1d252a">
+    <rect x="68" y="58" width="370" height="160" fill="#ffffff" opacity="0.92" />
+    <text x="96" y="96" font-size="18" font-weight="700" letter-spacing="3">PLANNING OPERATIONS</text>
+    <line x1="96" y1="116" x2="406" y2="116" stroke="#536b78" stroke-width="2" />
+    <text x="96" y="148" font-size="16" font-weight="700" letter-spacing="2">CONNECT</text>
+    <text x="96" y="178" font-size="16" font-weight="700" letter-spacing="2">ENTER</text>
+    <text x="250" y="148" font-size="16" font-weight="700" letter-spacing="2">RETAIN</text>
+    <text x="250" y="178" font-size="16" font-weight="700" letter-spacing="2">OPEN</text>
+  </g>
+
+  <path d="M 300 430 C 520 360 820 390 1045 505" fill="none" stroke="#536b78" stroke-width="5" stroke-dasharray="18 14" opacity="0.9" />
+  <path d="M 560 690 C 800 665 1110 690 1435 690 L 1515 1030 L 550 1030 Z" fill="#536b78" opacity="0.12" stroke="#536b78" stroke-width="4" />
+  <path d="M 665 766 C 850 742 1100 755 1338 775 L 1388 1000 L 650 1000 Z" fill="none" stroke="#ffffff" stroke-width="4" stroke-dasharray="12 12" opacity="0.85" />
+  <path d="M 1080 420 C 1055 520 1060 610 1085 700 C 1110 794 1175 868 1195 983" fill="none" stroke="#a95e4f" stroke-width="10" stroke-linecap="round" marker-end="url(#axis-arrow)" />
+  <path d="M 495 1010 C 760 1036 1090 1037 1510 1018" fill="none" stroke="#536b78" stroke-width="7" stroke-dasharray="22 16" opacity="0.92" />
+
+  <g fill="#ffffff" stroke="#a95e4f" stroke-width="6">
+    <circle cx="1080" cy="700" r="15" />
+    <circle cx="1126" cy="816" r="15" />
+    <circle cx="1186" cy="940" r="15" />
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="2" fill="#1d252a">
+    <rect x="1012" y="655" width="126" height="34" fill="#ffffff" opacity="0.92" />
+    <text x="1028" y="679">NODE 01</text>
+    <rect x="1152" y="801" width="126" height="34" fill="#ffffff" opacity="0.92" />
+    <text x="1168" y="825">NODE 02</text>
+    <rect x="1212" y="925" width="126" height="34" fill="#ffffff" opacity="0.92" />
+    <text x="1228" y="949">NODE 03</text>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" fill="#ffffff" font-size="20" font-weight="700" letter-spacing="3">
+    <line x1="432" y1="348" x2="510" y2="420" stroke="#ffffff" stroke-width="3" />
+    <circle cx="510" cy="420" r="7" fill="#ffffff" />
+    <rect x="310" y="302" width="170" height="42" fill="#536b78" opacity="0.9" />
+    <text x="330" y="330">CITY EDGE</text>
+
+    <line x1="1330" y1="550" x2="1080" y2="620" stroke="#ffffff" stroke-width="3" />
+    <rect x="1330" y="522" width="224" height="42" fill="#a95e4f" opacity="0.92" />
+    <text x="1352" y="550">PUBLIC AXIS</text>
+
+    <line x1="610" y1="870" x2="748" y2="850" stroke="#ffffff" stroke-width="3" />
+    <rect x="382" y="844" width="228" height="42" fill="#536b78" opacity="0.9" />
+    <text x="404" y="872">RETAINED CORE</text>
+
+    <line x1="1432" y1="1092" x2="1366" y2="1030" stroke="#ffffff" stroke-width="3" />
+    <rect x="1432" y="1068" width="280" height="42" fill="#536b78" opacity="0.9" />
+    <text x="1454" y="1096">WATERFRONT BELT</text>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" fill="#ffffff" font-size="17" letter-spacing="2">
+    <rect x="1390" y="690" width="280" height="38" fill="#1d252a" opacity="0.72" />
+    <text x="1410" y="716">PUBLIC SEQUENCE</text>
+    <rect x="708" y="714" width="244" height="38" fill="#1d252a" opacity="0.72" />
+    <text x="728" y="740">RETAINED FABRIC</text>
+  </g>
+</svg>

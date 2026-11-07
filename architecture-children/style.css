@@ -1,0 +1,41 @@
+.architecture-children-page .hero-slide img {
+  object-position: center;
+  filter: saturate(0.86) contrast(1.02);
+}
+
+.architecture-children-page .hero-slide:first-child {
+  background: #f4f3ef;
+}
+
+.architecture-children-page .hero-slide:first-child img {
+  object-fit: contain;
+}
+
+.architecture-children-page .hero-caption-source {
+  display: none;
+}
+
+.architecture-children-page .scroller-item .image-frame {
+  min-height: 0;
+  background: #ffffff;
+}
+
+.architecture-children-page .scroller-item .image-frame img {
+  object-fit: contain;
+}
+
+.architecture-children-page .project-title-row h1 {
+  max-width: 900px;
+}
+
+.architecture-children-page .record-thesis h2,
+.architecture-children-page .split-chapter-copy h2,
+.architecture-children-page .chapter-head h2 {
+  max-width: 560px;
+}
+
+@media (max-width: 780px) {
+  .architecture-children-page .hero-slide img {
+    object-position: center center;
+  }
+}

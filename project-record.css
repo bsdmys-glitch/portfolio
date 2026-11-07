@@ -1,0 +1,219 @@
+/* Shared introduction system, based on the Jieyang project record. */
+body .project-record {
+  --record-ink: #17191c;
+  --record-copy: #4c5054;
+  --record-muted: #777d80;
+  --record-line: #d9ddda;
+  padding-top: 0;
+  font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+body .project-record .project-title-row {
+  display: block;
+  padding: 38px 0 0;
+  min-height: 0;
+}
+
+body .project-record .project-title-copy,
+body .project-record .title-lockup {
+  min-width: 0;
+  width: 100%;
+}
+
+body .project-record .title-lockup {
+  display: grid;
+  gap: 14px;
+}
+
+body .project-record .project-name-line {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 26px;
+  margin: 0;
+}
+
+body .project-record .project-name-line .title-lockup {
+  width: auto;
+  flex: 0 1 auto;
+}
+
+body .project-record .project-kicker {
+  display: block;
+  color: #50645d;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+body .project-record .project-title-row h1 {
+  max-width: 100%;
+  margin: 0;
+  color: var(--record-ink);
+  font-family: Baskerville, "Baskerville Old Face", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: 0;
+  text-wrap: wrap;
+  overflow-wrap: anywhere;
+}
+
+body .project-record .project-title-copy > .section-index {
+  display: block;
+  margin: 44px 0 0;
+  padding: 12px 0 0;
+  border-top: 1px solid var(--record-ink);
+  color: var(--record-muted);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+
+body .project-record .record-thesis {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 28px;
+  margin: 0;
+  padding: 20px 0 0;
+}
+
+body .project-record .record-thesis h2 {
+  grid-column: 1 / span 5;
+  min-width: 0;
+  max-width: none;
+  margin: 0;
+  color: var(--record-ink);
+  font-family: Baskerville, "Baskerville Old Face", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
+}
+
+body .project-record .record-thesis > div {
+  grid-column: 7 / -1;
+  min-width: 0;
+  max-width: 760px;
+  margin: 0;
+}
+
+body .project-record .record-thesis p {
+  max-width: none;
+  margin: 0;
+  color: var(--record-copy);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.48;
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
+}
+
+body .project-record .record-thesis p + p { margin-top: 22px; }
+
+body .project-record .project-meta-grid,
+body .project-record .record-credits {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  align-items: start;
+}
+
+body .project-record .project-meta-grid {
+  position: static;
+  inset: auto;
+  z-index: auto;
+  width: auto;
+  max-width: none;
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+  text-transform: none;
+  margin: 58px 0 0;
+  padding: 28px 0 30px;
+  border-top: 1px solid var(--record-line);
+  border-bottom: 1px solid var(--record-line);
+}
+
+body .project-record .record-credits { margin: 0; padding: 36px 0 0; }
+
+body .project-record .project-meta-grid > div,
+body .project-record .record-credits > div {
+  min-width: 0;
+  margin: 0;
+  padding: 0 28px;
+  border-left: 1px solid var(--record-line);
+}
+
+body .project-record .project-meta-grid > div:first-child,
+body .project-record .record-credits > div:first-child { padding-left: 0; border-left: 0; }
+
+body .project-record .project-meta-grid > div:last-child,
+body .project-record .record-credits > div:last-child { padding-right: 0; }
+
+body .project-record .project-meta-grid dt,
+body .project-record .record-credits dt {
+  margin: 0;
+  color: var(--record-muted);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+body .project-record .project-meta-grid dd,
+body .project-record .record-credits dd,
+body .project-record .record-credits strong {
+  display: block;
+  margin: 12px 0 0;
+  color: var(--record-ink);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.38;
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
+}
+
+body .project-record.record-simple { padding-bottom: 48px; }
+
+@media (max-width: 1100px) {
+  body .project-record .project-title-row h1 { font-size: 52px; }
+}
+
+@media (max-width: 900px) {
+  body .project-record .record-thesis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  body .project-record .record-thesis h2,
+  body .project-record .record-thesis > div { grid-column: auto; }
+}
+
+@media (max-width: 780px) {
+  body .project-record .project-title-row { padding-top: 30px; }
+  body .project-record .project-title-row h1 { font-size: 48px; }
+  body .project-record .project-title-copy > .section-index { margin-top: 30px; }
+  body .project-record .record-thesis { display: block; }
+  body .project-record .record-thesis h2 { font-size: 34px; }
+  body .project-record .record-thesis > div { margin-top: 24px; }
+  body .project-record .project-meta-grid,
+  body .project-record .record-credits { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 0; }
+  body .project-record .project-meta-grid > div:nth-child(odd),
+  body .project-record .record-credits > div:nth-child(odd) { padding-left: 0; border-left: 0; }
+  body .project-record .project-meta-grid > div:nth-child(even),
+  body .project-record .record-credits > div:nth-child(even) { padding-right: 0; }
+}
+
+@media (max-width: 620px) {
+  body .project-record .project-title-row h1 { font-size: 42px; }
+  body .project-record .record-thesis h2 { font-size: 31px; }
+  body .project-record .project-meta-grid,
+  body .project-record .record-credits { grid-template-columns: minmax(0, 1fr); }
+  body .project-record .project-meta-grid > div,
+  body .project-record .record-credits > div { padding: 0; border-left: 0; }
+}

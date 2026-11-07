@@ -1,0 +1,152 @@
+@import url("../jieyang/style.css?nav-center-v1");
+
+/* Shou County keeps the Jieyang record rhythm while letting the quieter
+   courtyard material carry the visual emphasis. */
+.shouxian-page .hero-slide img {
+  object-position: center center;
+}
+
+.shouxian-page .hero-slide:nth-child(1) img {
+  object-position: center 52%;
+}
+
+.shouxian-page .hero-slide:nth-child(2) img {
+  object-position: center 48%;
+}
+
+.shouxian-page .hero-slide:nth-child(3) img {
+  object-position: center 52%;
+}
+
+.shouxian-page .project-kicker,
+.shouxian-page .record-label,
+.shouxian-page .contribution-evidence-label {
+  color: #5d7478;
+}
+
+.shouxian-page .project-record {
+  padding-bottom: 8px;
+}
+
+.shouxian-page .contribution-heading .record-note {
+  max-width: 720px;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.shouxian-page .record-thesis h2,
+.shouxian-page .split-chapter-copy h2,
+.shouxian-page .credits-grid h2,
+.shouxian-page .related-item strong {
+  text-wrap: balance;
+}
+
+.shouxian-page .design-reading-scroller .scroller-item,
+.shouxian-page .framework-scroller .scroller-item {
+  flex-basis: 82%;
+}
+
+.shouxian-page .drawing-card .image-frame,
+.shouxian-page .framework-card .image-frame {
+  aspect-ratio: 1.5 / 1;
+  background: #f3f4f1;
+}
+
+.shouxian-page .drawing-card .image-frame img,
+.shouxian-page .framework-card .image-frame img {
+  height: auto;
+  min-height: 0;
+  object-fit: contain;
+}
+
+.shouxian-page .built-scroller .scroller-item {
+  flex-basis: 72%;
+}
+
+.shouxian-page .photo-card .image-frame {
+  aspect-ratio: auto;
+  background: #f1f3f0;
+}
+
+.shouxian-page .photo-card .image-frame img {
+  height: auto;
+  min-height: 0;
+  object-fit: contain;
+}
+
+.shouxian-page .shou-reading-list {
+  margin-top: 42px;
+}
+
+.shouxian-page .shou-reading-list > div {
+  padding: 15px 0;
+}
+
+.shouxian-page .shou-reading-list strong {
+  font-size: 17px;
+}
+
+.shouxian-page .shou-reading-list p {
+  line-height: 1.45;
+}
+
+.shouxian-page #built-experience .split-chapter-media {
+  padding-top: 76px;
+}
+
+.shouxian-page #built-experience .verification-notes {
+  margin-top: 42px;
+}
+
+@media (min-width: 781px) {
+  .shouxian-page #built-experience .verification-notes {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+    margin-top: 42px;
+    padding: 0;
+    border-top: 0;
+    border-bottom: 0;
+  }
+
+  .shouxian-page #built-experience .verification-notes > div {
+    grid-template-columns: 32px 1fr;
+    gap: 5px 14px;
+    padding: 0 24px;
+    border-left: 1px solid var(--line);
+    border-bottom: 0;
+  }
+
+  .shouxian-page #built-experience .verification-notes > div:first-child {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .shouxian-page #built-experience .verification-notes > div:last-child {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 780px) {
+  .shouxian-page .design-reading-scroller .scroller-item,
+  .shouxian-page .framework-scroller .scroller-item {
+    flex-basis: 92%;
+  }
+
+  .shouxian-page .built-scroller .scroller-item {
+    flex-basis: 88%;
+  }
+
+  .shouxian-page #built-experience .split-chapter-media {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .shouxian-page .design-reading-scroller .scroller-item,
+  .shouxian-page .framework-scroller .scroller-item,
+  .shouxian-page .built-scroller .scroller-item {
+    flex-basis: 96%;
+  }
+}

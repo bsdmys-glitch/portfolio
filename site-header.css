@@ -1,0 +1,94 @@
+/* Shared navigation system: matched to the homepage header. */
+body:not(.portfolio-home) .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  min-height: 80px;
+  padding: 0 max(var(--gutter, var(--page-gutter, 48px)), calc((100vw - var(--content-max, 1640px)) / 2));
+  border-bottom: 1px solid var(--line, #d9ddda);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(14px);
+}
+
+body:not(.portfolio-home) .site-mark {
+  font-size: clamp(18px, 1.35vw, 23px);
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+body:not(.portfolio-home) .site-nav {
+  display: flex;
+  grid-column: 2;
+  justify-self: center;
+  gap: clamp(22px, 2.45vw, 42px);
+  color: #2b2e30;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.16em;
+}
+
+body:not(.portfolio-home) .menu-button {
+  justify-self: end;
+  display: none;
+  gap: 5px;
+  width: 28px;
+  padding: 4px 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+body:not(.portfolio-home) .menu-button span {
+  display: block;
+  width: 28px;
+  height: 1px;
+  background: var(--ink, #17191c);
+}
+
+body:not(.portfolio-home) .mobile-menu {
+  position: fixed;
+  z-index: 19;
+  top: 80px;
+  right: 0;
+  display: grid;
+  gap: 18px;
+  width: min(250px, 100vw);
+  padding: 24px var(--gutter, var(--page-gutter, 48px)) 28px;
+  border-bottom: 1px solid var(--line, #d9ddda);
+  border-left: 1px solid var(--line, #d9ddda);
+  background: var(--paper, #ffffff);
+}
+
+body:not(.portfolio-home) .mobile-menu[hidden] {
+  display: none;
+}
+
+body:not(.portfolio-home) .mobile-menu a {
+  font-size: 20px;
+}
+
+@media (max-width: 900px) {
+  body:not(.portfolio-home) .site-header {
+    grid-template-columns: 1fr auto;
+    min-height: 68px;
+  }
+
+  body:not(.portfolio-home) .site-nav {
+    display: none;
+  }
+
+  body:not(.portfolio-home) .menu-button {
+    display: grid;
+  }
+
+  body:not(.portfolio-home) .mobile-menu {
+    top: 68px;
+  }
+}

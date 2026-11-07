@@ -1,0 +1,112 @@
+.practice-page {
+  --paper: #ffffff;
+  --ink: #20262a;
+  --copy: #5a6266;
+  --muted: #7e898e;
+  --line: #dce2df;
+  --soft: #f2f5f3;
+  --sage: #e2ece7;
+  --sage-ink: #6b8585;
+}
+
+.practice-page .hero-carousel {
+  background: #eef3ef;
+}
+
+.practice-page .hero-slide {
+  background: #eef3ef;
+}
+
+.practice-page .hero-slide img {
+  object-fit: contain;
+  object-position: center;
+}
+
+.practice-page .hero-slide:nth-child(2) {
+  background: #8799b0;
+}
+
+.practice-page .hero-slide:nth-child(3),
+.practice-page .hero-slide:nth-child(4) {
+  background: #f5f5f1;
+}
+
+.practice-page .hero-slide:nth-child(3) .hero-caption,
+.practice-page .hero-slide:nth-child(4) .hero-caption {
+  color: var(--ink);
+  background: linear-gradient(to top, rgba(245, 245, 241, 0.96), rgba(245, 245, 241, 0));
+}
+
+.practice-page .project-kicker {
+  color: var(--sage-ink);
+}
+
+.practice-page .practice-visual-scroller .scroller-item {
+  flex-basis: 72%;
+}
+
+.practice-page .practice-visual-card .image-frame,
+.practice-page .practice-single-figure .image-frame {
+  aspect-ratio: 396 / 612;
+  overflow: hidden;
+  background: #f5f6f3;
+}
+
+.practice-page .practice-visual-card .image-frame img,
+.practice-page .practice-single-figure .image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.practice-page .practice-single-figure figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 10px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.practice-page .practice-profile-media {
+  padding-top: 76px;
+}
+
+.practice-page .practice-framework-list {
+  margin-top: 34px;
+}
+
+.practice-page .practice-data-list {
+  margin-top: 34px;
+}
+
+.practice-page .source-note {
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  color: var(--muted) !important;
+  font-size: 13px;
+}
+
+.practice-page .credits-note {
+  color: var(--copy);
+}
+
+@media (max-width: 780px) {
+  .practice-page .hero-caption span {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .practice-page .practice-profile-media {
+    padding-top: 0;
+  }
+
+  .practice-page .practice-visual-scroller .scroller-item {
+    flex-basis: 86%;
+  }
+}

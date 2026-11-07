@@ -1,0 +1,116 @@
+@import url("../jieyang/style.css?nav-center-v1");
+
+/* Keep Fuyao on the Jieyang record format while retaining its campus palette. */
+.fuyao-page {
+  --copy: #44515b;
+  --muted: #78858a;
+  --line: #d8dfdc;
+  --soft: #eef2f0;
+  --sage-ink: #52736e;
+}
+
+.fuyao-page .site-mark {
+  text-transform: none;
+}
+
+.fuyao-page .hero-slide img {
+  filter: saturate(0.88) contrast(1.02);
+}
+
+.fuyao-page .hero-slide:nth-child(1) img {
+  object-position: center 54%;
+}
+
+.fuyao-page .project-kicker {
+  color: var(--sage-ink);
+}
+
+.fuyao-page .project-title-row h1 {
+  max-width: 1000px;
+}
+
+.fuyao-page .record-thesis h2,
+.fuyao-page .split-chapter-copy h2,
+.fuyao-page .chapter-head h2 {
+  max-width: 560px;
+}
+
+.fuyao-page .pending-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 8px;
+  width: 100%;
+  min-height: 300px;
+  aspect-ratio: 1.5 / 1;
+  padding: clamp(20px, 3vw, 42px);
+  border: 1px solid var(--line);
+  background: var(--soft);
+  color: var(--sage-ink);
+}
+
+.fuyao-page .pending-image span {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.fuyao-page .pending-image small {
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+
+.fuyao-page .pending-image + figcaption {
+  color: var(--muted);
+}
+
+.fuyao-page .split-chapter-media .image-frame img {
+  width: 100%;
+}
+
+.fuyao-page .analysis-card .image-frame {
+  aspect-ratio: 1.5 / 1;
+}
+
+.fuyao-page .analysis-card .image-frame img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.fuyao-page .hotel-card .image-frame {
+  aspect-ratio: 1.38 / 1;
+  background: var(--soft);
+}
+
+.fuyao-page .hotel-card .image-frame img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.fuyao-page .research-card .image-frame {
+  aspect-ratio: 1.5 / 1;
+}
+
+.fuyao-page .research-card .image-frame img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.fuyao-page .project-record .record-credits strong {
+  max-width: 360px;
+}
+
+.fuyao-page .public-record .aura-entry {
+  border-color: var(--line);
+}
+
+.fuyao-page .public-record .aura-entry strong {
+  color: var(--ink);
+}
+
+@media (max-width: 620px) {
+  .fuyao-page .pending-image {
+    min-height: 230px;
+  }
+}

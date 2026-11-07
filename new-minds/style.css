@@ -1,0 +1,35 @@
+.new-minds-page .hero-slide img {
+  object-position: center;
+}
+
+.new-minds-page .hero-slide:nth-child(2) img {
+  object-position: center 42%;
+}
+
+.new-minds-page .hero-slide:nth-child(3) img {
+  object-position: center;
+}
+
+.new-minds-page .record-thesis h2,
+.new-minds-page .split-chapter-copy h2 {
+  max-width: 520px;
+}
+
+.new-minds-page .guideline-layers {
+  margin-top: 36px;
+}
+
+.new-minds-page .verification-notes {
+  margin-top: 36px;
+}
+
+.new-minds-page .public-record .data-list {
+  margin-top: 0;
+}
+
+@media (max-width: 780px) {
+  .new-minds-page .record-thesis h2,
+  .new-minds-page .split-chapter-copy h2 {
+    max-width: none;
+  }
+}

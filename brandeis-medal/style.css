@@ -1,0 +1,400 @@
+.brandeis-page {
+  --paper: #fbfbf8;
+  --ink: #17263f;
+  --copy: #4f5965;
+  --muted: #77818d;
+  --line: #d6dce3;
+  --soft: #eef2f5;
+  --sage: #dbe6ed;
+  --sage-ink: #345979;
+  --warm: #b58a3c;
+  --brandeis-blue: #0a3475;
+  --brandeis-blue-deep: #071f4a;
+  --brandeis-gold: #cda34c;
+}
+
+.brandeis-page .hero-carousel,
+.brandeis-page .hero-slide {
+  background: var(--brandeis-blue-deep);
+}
+
+.brandeis-page .hero-slide img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.brandeis-page .hero-slide:nth-child(n + 2) img {
+  object-fit: contain;
+  background: var(--brandeis-blue);
+}
+
+.brandeis-page .hero-caption {
+  padding-bottom: 22px;
+  background: linear-gradient(to top, rgba(3, 18, 46, 0.72), rgba(3, 18, 46, 0));
+}
+
+.brandeis-page .hero-caption span:first-child,
+.brandeis-page .project-kicker,
+.brandeis-page .section-index {
+  color: #6f91bb;
+}
+
+.brandeis-page .carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 var(--page-gutter);
+  background: var(--brandeis-blue-deep);
+  color: #dae6f7;
+}
+
+.brandeis-page .carousel-status {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+
+.brandeis-page .carousel-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.brandeis-page .carousel-button {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 36px;
+  border: 1px solid rgba(218, 230, 247, 0.36);
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.brandeis-page .carousel-button:hover:not(:disabled),
+.brandeis-page .carousel-button:focus-visible {
+  border-color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.brandeis-page .carousel-button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.brandeis-page .project-title-row {
+  background: var(--paper);
+}
+
+.brandeis-page .project-title-copy > .section-index {
+  border-top-color: var(--brandeis-blue);
+}
+
+.brandeis-page .record-thesis h2,
+.brandeis-page .split-chapter-copy h2,
+.brandeis-page .credits-grid h2,
+.brandeis-page .related-item strong {
+  color: var(--ink);
+}
+
+.brandeis-page .record-thesis {
+  padding-top: 24px;
+}
+
+.brandeis-page .record-thesis > div,
+.brandeis-page .split-chapter-copy > p:not(.lede),
+.brandeis-page .credits-note {
+  color: var(--copy);
+}
+
+.brandeis-page .project-meta-grid,
+.brandeis-page .record-credits,
+.brandeis-page .personal-contribution {
+  border-color: #cbd4dd;
+}
+
+.brandeis-page .personal-contribution {
+  margin-top: 82px;
+}
+
+.brandeis-page .contribution-heading h2,
+.brandeis-page .contribution-number,
+.brandeis-page .contribution-evidence-label {
+  color: var(--sage-ink);
+}
+
+.brandeis-page .contribution-evidence-link,
+.brandeis-page .back-link {
+  border-bottom-color: var(--brandeis-blue);
+}
+
+.brandeis-page .story-chapter:not(.project-record) {
+  padding-top: 108px;
+}
+
+.brandeis-page .split-chapter {
+  border-top-color: var(--brandeis-blue);
+}
+
+.brandeis-page .split-chapter-copy > .section-index {
+  border-bottom-color: #cbd4dd;
+}
+
+.brandeis-page .data-list {
+  border-top-color: #cbd4dd;
+}
+
+.brandeis-page .data-list > div {
+  border-bottom-color: #cbd4dd;
+}
+
+.brandeis-page .data-list strong {
+  color: var(--brandeis-blue);
+}
+
+.brandeis-page .brandeis-place-media {
+  padding-top: 76px;
+}
+
+.brandeis-page .place-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px 16px;
+}
+
+.brandeis-page .place-card-wide {
+  grid-column: 1 / -1;
+}
+
+.brandeis-page .place-card .image-frame {
+  aspect-ratio: 1.6 / 1;
+  background: #e9edf1;
+}
+
+.brandeis-page .place-card-wide .image-frame {
+  aspect-ratio: 1.88 / 1;
+}
+
+.brandeis-page .place-card .image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brandeis-page .place-card figcaption,
+.brandeis-page .material-card figcaption,
+.brandeis-page .presentation-card figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 10px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.brandeis-page .place-card figcaption span:last-child,
+.brandeis-page .material-card figcaption span:last-child,
+.brandeis-page .presentation-card figcaption span:last-child {
+  text-align: right;
+}
+
+.brandeis-page .brandeis-variant-scroller .scroller-item {
+  flex-basis: 76%;
+}
+
+.brandeis-page .brandeis-variant-card .image-frame {
+  aspect-ratio: 16 / 9;
+  background: var(--brandeis-blue);
+}
+
+.brandeis-page .brandeis-variant-card .image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.brandeis-page .material-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px 16px;
+}
+
+.brandeis-page .material-card-featured {
+  grid-column: 1 / -1;
+}
+
+.brandeis-page .material-card .image-frame {
+  aspect-ratio: 1.28 / 1;
+  background: var(--brandeis-blue-deep);
+}
+
+.brandeis-page .material-card-featured .image-frame {
+  aspect-ratio: 1.16 / 1;
+}
+
+.brandeis-page .material-card .image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.brandeis-page .final-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px 16px;
+}
+
+.brandeis-page .final-photo-card-featured {
+  grid-column: 1 / -1;
+}
+
+.brandeis-page .final-photo-card .image-frame {
+  aspect-ratio: 0.75 / 1;
+  background: #101a2c;
+}
+
+.brandeis-page .final-photo-card-featured .image-frame {
+  aspect-ratio: 0.75 / 1;
+}
+
+.brandeis-page .final-photo-card .image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brandeis-page .final-photo-card-featured .image-frame img {
+  object-position: center 58%;
+}
+
+.brandeis-page .final-photo-card figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 10px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.brandeis-page .final-photo-card figcaption span:last-child {
+  text-align: right;
+}
+
+.brandeis-page .presentation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.brandeis-page .presentation-card .image-frame {
+  aspect-ratio: 0.772 / 1;
+  background: #f2f0e9;
+}
+
+.brandeis-page .presentation-card .image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brandeis-page .credits-section {
+  border-top-color: var(--brandeis-blue);
+}
+
+.brandeis-page .related-section {
+  border-top-color: #cbd4dd;
+}
+
+.brandeis-page .site-footer {
+  border-top-color: #cbd4dd;
+}
+
+@media (max-width: 900px) {
+  .brandeis-page .brandeis-place-media {
+    padding-top: 56px;
+  }
+}
+
+@media (max-width: 780px) {
+  .brandeis-page .carousel-controls {
+    padding-inline: var(--page-gutter);
+  }
+
+  .brandeis-page .hero-slide:nth-child(n + 2) img {
+    object-fit: cover;
+  }
+
+  .brandeis-page .story-chapter:not(.project-record) {
+    padding-top: 76px;
+  }
+
+  .brandeis-page .brandeis-place-media {
+    padding-top: 0;
+  }
+
+  .brandeis-page .brandeis-variant-scroller .scroller-item {
+    flex-basis: 90%;
+  }
+
+  .brandeis-page .place-grid,
+  .brandeis-page .material-grid,
+  .brandeis-page .final-photo-grid,
+  .brandeis-page .presentation-grid {
+    display: block;
+  }
+
+  .brandeis-page .place-card + .place-card,
+  .brandeis-page .material-card + .material-card,
+  .brandeis-page .final-photo-card + .final-photo-card,
+  .brandeis-page .presentation-card + .presentation-card {
+    margin-top: 28px;
+  }
+
+  .brandeis-page .place-card .image-frame,
+  .brandeis-page .place-card-wide .image-frame {
+    aspect-ratio: 1.6 / 1;
+  }
+
+  .brandeis-page .material-card .image-frame,
+  .brandeis-page .material-card-featured .image-frame {
+    aspect-ratio: 1.15 / 1;
+  }
+
+  .brandeis-page .final-photo-card .image-frame,
+  .brandeis-page .final-photo-card-featured .image-frame {
+    aspect-ratio: 0.75 / 1;
+  }
+
+  .brandeis-page .presentation-card .image-frame {
+    aspect-ratio: 0.772 / 1;
+  }
+}
+
+@media (max-width: 620px) {
+  .brandeis-page .hero-slide:nth-child(n + 2) img {
+    object-fit: contain;
+  }
+
+  .brandeis-page .place-card figcaption,
+  .brandeis-page .material-card figcaption,
+  .brandeis-page .final-photo-card figcaption,
+  .brandeis-page .presentation-card figcaption {
+    display: block;
+  }
+
+  .brandeis-page .place-card figcaption span,
+  .brandeis-page .material-card figcaption span,
+  .brandeis-page .final-photo-card figcaption span,
+  .brandeis-page .presentation-card figcaption span {
+    display: block;
+  }
+
+  .brandeis-page .place-card figcaption span:last-child,
+  .brandeis-page .material-card figcaption span:last-child,
+  .brandeis-page .final-photo-card figcaption span:last-child,
+  .brandeis-page .presentation-card figcaption span:last-child {
+    margin-top: 4px;
+    text-align: left;
+  }
+}

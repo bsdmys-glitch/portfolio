@@ -1,0 +1,145 @@
+@import url("../jieyang/style.css?nav-center-v1");
+
+/* Guohua keeps the shared record layout, with a quieter industrial palette. */
+.guohua-page {
+  --copy: #4d5253;
+  --muted: #747b7b;
+  --line: #d8ddda;
+  --soft: #f0f2ef;
+  --sage-ink: #596d68;
+  --warm: #8c765d;
+}
+
+.guohua-page .site-mark {
+  font-size: clamp(20px, 1.55vw, 22px);
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: none;
+}
+
+.guohua-page .hero-slide img {
+  filter: saturate(0.86) contrast(1.03);
+}
+
+.guohua-page .hero-slide:nth-child(1) img {
+  object-position: center 48%;
+}
+
+.guohua-page .hero-slide:nth-child(2) img {
+  object-position: center 42%;
+}
+
+.guohua-page .project-kicker {
+  color: var(--sage-ink);
+}
+
+.guohua-page .project-title-row h1 {
+  max-width: 920px;
+  overflow-wrap: anywhere;
+}
+
+.guohua-page .title-lockup {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.guohua-page .mobile-title-break {
+  display: none;
+}
+
+.guohua-page .record-thesis h2,
+.guohua-page .split-chapter-copy h2,
+.guohua-page .chapter-head h2 {
+  max-width: 560px;
+}
+
+.guohua-page .pending-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 8px;
+  width: 100%;
+  min-height: 300px;
+  aspect-ratio: 1.5 / 1;
+  padding: clamp(20px, 3vw, 42px);
+  border: 1px solid var(--line);
+  background: var(--soft);
+  color: var(--sage-ink);
+}
+
+.guohua-page .pending-image span {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.guohua-page .pending-image small {
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+
+.guohua-page .pending-image + figcaption {
+  color: var(--muted);
+}
+
+.guohua-page .split-chapter-media .image-frame img {
+  width: 100%;
+}
+
+.guohua-page .research-card .image-frame,
+.guohua-page .framework-card .image-frame,
+.guohua-page .design-card .image-frame {
+  aspect-ratio: 1.5 / 1;
+}
+
+.guohua-page .research-card .image-frame img,
+.guohua-page .framework-card .image-frame img,
+.guohua-page .design-card .image-frame img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.guohua-page .analysis-card .image-frame {
+  aspect-ratio: 1.5 / 1;
+}
+
+.guohua-page .analysis-card .image-frame img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.guohua-page .public-record .recognition-column {
+  border-left-color: var(--line);
+}
+
+.guohua-page .public-record .aura-entry {
+  border-color: var(--line);
+}
+
+.guohua-page .public-record .aura-entry strong {
+  color: var(--ink);
+}
+
+@media (max-width: 620px) {
+  .guohua-page .project-title-copy,
+  .guohua-page .project-name-line,
+  .guohua-page .title-lockup {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .guohua-page .project-title-row h1 {
+    max-width: 100%;
+    width: 100%;
+    white-space: normal;
+  }
+
+  .guohua-page .mobile-title-break {
+    display: inline;
+  }
+
+  .guohua-page .pending-image {
+    min-height: 230px;
+  }
+}

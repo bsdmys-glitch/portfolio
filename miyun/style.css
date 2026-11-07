@@ -1,0 +1,60 @@
+.miyun-page {
+  --sage-ink: #567064;
+  --miyun-ink: #3f5d53;
+  --miyun-warm: #b38a63;
+  --miyun-soft: #eef1ed;
+}
+
+.miyun-page .hero-slide.hero-map {
+  background: #edf0eb;
+}
+
+.miyun-page .hero-slide.hero-map img {
+  object-fit: contain;
+  padding: 0 clamp(18px, 7vw, 130px);
+}
+
+.miyun-page .hero-caption {
+  background: linear-gradient(to top, rgba(27, 39, 35, 0.58), rgba(27, 39, 35, 0));
+}
+
+.miyun-page .project-kicker,
+.miyun-page .contribution-evidence-label {
+  color: var(--miyun-ink);
+}
+
+.miyun-page .project-title-row h1,
+.miyun-page .record-thesis h2,
+.miyun-page .split-chapter-copy h2,
+.miyun-page .credits-grid h2,
+.miyun-page .related-item strong {
+  letter-spacing: -0.012em;
+}
+
+.miyun-page .research-card .image-frame,
+.miyun-page .framework-card .image-frame,
+.miyun-page .design-card .image-frame,
+.miyun-page .guidelines-figure .image-frame {
+  background: var(--miyun-soft);
+}
+
+.miyun-page .research-card .image-frame img,
+.miyun-page .framework-card .image-frame img,
+.miyun-page .design-card .image-frame img,
+.miyun-page .guidelines-figure .image-frame img {
+  object-fit: contain;
+}
+
+.miyun-page .asset-placeholder {
+  background: linear-gradient(135deg, #f5f4ed, #e9efea);
+}
+
+.miyun-page .record-evidence-grid .asset-placeholder strong {
+  color: var(--miyun-ink);
+}
+
+@media (max-width: 780px) {
+  .miyun-page .hero-slide.hero-map img {
+    padding: 0 8px;
+  }
+}

@@ -1,0 +1,98 @@
+.tianfu-page {
+  --sage-ink: #49666d;
+  --soft: #f2f5f1;
+  --warm: #b76f49;
+}
+
+.tianfu-page .hero-slide--drawing,
+.tianfu-page .hero-slide--drawing img {
+  background: #f4f0e8;
+}
+
+.tianfu-page .hero-slide--drawing img {
+  object-fit: contain;
+}
+
+.tianfu-page .project-kicker,
+.tianfu-page .scroller-label {
+  color: var(--sage-ink);
+}
+
+.tianfu-page .project-title-row h1,
+.tianfu-page .record-thesis h2,
+.tianfu-page .split-chapter-copy h2,
+.tianfu-page .credits-grid h2 {
+  text-wrap: balance;
+}
+
+.tianfu-page .record-thesis h2,
+.tianfu-page .split-chapter-copy h2,
+.tianfu-page .credits-grid h2 {
+  color: #1d5b68;
+}
+
+.tianfu-page .scroller .image-frame {
+  background: #f5f3ed;
+}
+
+.tianfu-page .research-card .image-frame img,
+.tianfu-page .framework-card .image-frame img,
+.tianfu-page .design-card .image-frame img {
+  object-fit: contain;
+}
+
+.tianfu-page .planning-scroller .scroller-item,
+.tianfu-page .framework-scroller .scroller-item,
+.tianfu-page .design-scroller .scroller-item {
+  flex-basis: 82%;
+}
+
+.tianfu-page #planning-premise .split-chapter-media,
+.tianfu-page #city-structure .split-chapter-media,
+.tianfu-page #programme .split-chapter-media,
+.tianfu-page #architectural-deepening .split-chapter-media,
+.tianfu-page #building-package .split-chapter-media {
+  padding-top: 76px;
+}
+
+.tianfu-page #programme .design-scroller .scroller-item,
+.tianfu-page #architectural-deepening .design-scroller .scroller-item,
+.tianfu-page #building-package .design-scroller .scroller-item {
+  flex-basis: 64%;
+}
+
+.tianfu-page #architectural-deepening .framework-list strong {
+  color: var(--sage-ink);
+}
+
+.tianfu-page #architectural-deepening .framework-list li:nth-child(1) strong {
+  color: #b8483f;
+}
+
+.tianfu-page #architectural-deepening .framework-list li:nth-child(2) strong {
+  color: #718d68;
+}
+
+.tianfu-page #architectural-deepening .framework-list li:nth-child(3) strong {
+  color: #1d5b68;
+}
+
+.tianfu-page #architectural-deepening .framework-list li:nth-child(4) strong {
+  color: #b17f2b;
+}
+
+@media (max-width: 780px) {
+  .tianfu-page #planning-premise .split-chapter-media,
+  .tianfu-page #city-structure .split-chapter-media,
+  .tianfu-page #programme .split-chapter-media,
+  .tianfu-page #architectural-deepening .split-chapter-media,
+  .tianfu-page #building-package .split-chapter-media {
+    padding-top: 0;
+  }
+
+  .tianfu-page #programme .design-scroller .scroller-item,
+  .tianfu-page #architectural-deepening .design-scroller .scroller-item,
+  .tianfu-page #building-package .design-scroller .scroller-item {
+    flex-basis: 94%;
+  }
+}

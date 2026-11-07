@@ -1,0 +1,61 @@
+.morelia-page .morelia-hero .hero-slide:first-child img {
+  object-position: center;
+}
+
+.morelia-page .morelia-hero .hero-slide:nth-child(2) {
+  background: #f2f3f0;
+}
+
+.morelia-page .morelia-hero .hero-slide:nth-child(2) img {
+  object-fit: contain;
+}
+
+.morelia-page .morelia-visual-scroller .scroller-item {
+  flex-basis: 82%;
+}
+
+.morelia-page .morelia-visual-card .image-frame,
+.morelia-page .morelia-single-figure .image-frame {
+  background: #f5f6f3;
+}
+
+.morelia-page .morelia-visual-card .image-frame img,
+.morelia-page .morelia-single-figure .image-frame img {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  object-fit: contain;
+}
+
+.morelia-page .morelia-single-figure figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 10px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.morelia-page .morelia-framework-list {
+  margin-top: 34px;
+}
+
+.morelia-page .morelia-proposal-figure {
+  padding-top: 76px;
+}
+
+@media (max-width: 780px) {
+  .morelia-page .hero-caption span {
+    display: block;
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .morelia-page .morelia-proposal-figure {
+    padding-top: 0;
+  }
+}
