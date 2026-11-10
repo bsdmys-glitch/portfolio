@@ -206,7 +206,7 @@
 }
 
 .home-project-preview .slide-kicker {
-  margin: 0 0 16px;
+  margin: 0 0 8px;
   font-size: 11px;
   line-height: 1.4;
   letter-spacing: 0;
@@ -233,10 +233,10 @@
 
 .home-project-preview .slide-description {
   max-width: 720px;
-  margin: 18px auto 0;
+  margin: 10px auto 0;
   color: rgba(255, 255, 255, 0.85);
   font-size: 15px;
-  line-height: 1.55;
+  line-height: 1.4;
 }
 
 .home-project-preview .slide-control {
